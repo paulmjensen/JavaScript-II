@@ -3,7 +3,14 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+const Paul = "The Man."
 
+function sayHello(){
+  const Paul = "The Dude.";
+  return `Hello ${Paul}`;
+}
+console.log(sayHello()); //console says Hello The Dude.
+console.log(Paul); //console says The Man.
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
