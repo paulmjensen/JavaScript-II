@@ -45,7 +45,7 @@ function firstItem(arr, cb) {
   console.log(test2); // "this Pencil is worth a million dollars!"
 
 
-
+//---------------------------------------------------------------------------------------------------------------------//
 function getLength(arr, cb) {
   cb(arr.length);
   // getLength passes the length of the array into the callback.
@@ -53,7 +53,7 @@ function getLength(arr, cb) {
 getLength(items, (bananaphone) => {
   console.log(bananaphone);
 });
-
+//---------------------------------------------------------------------------------------------------------------------//
 function last(arr, cb) {
   cb(arr[arr.length - 1]);
   // last passes the last item of the array into the callback.
@@ -61,7 +61,7 @@ function last(arr, cb) {
 last(items, (hamburgerphone) =>{
   console.log(hamburgerphone);
 })
-
+//---------------------------------------------------------------------------------------------------------------------//
 function sumNums(x, y, cb) {
   cb(x + y);
   // sumNums adds two numbers (x, y) and passes the result to the callback.
@@ -69,7 +69,7 @@ function sumNums(x, y, cb) {
 sumNums(4, 5, (TheSum) =>{
   console.log(TheSum);
 })
-
+//---------------------------------------------------------------------------------------------------------------------//
 function multiplyNums(x, y, cb) {
   cb(x * y);
   // multiplyNums multiplies two numbers and passes the result to the callback.
@@ -77,9 +77,9 @@ function multiplyNums(x, y, cb) {
 multiplyNums(9, 10, (Multiply) =>{
   console.log(Multiply);
 })
-
+//---------------------------------------------------------------------------------------------------------------------//
 // function contains(item, list, cb) {
-//   cb(list.ForEach((item, list)=>{
+//   cb(list.ForEach(function(item, list{
 //     alert(item, list);
 //   }))
 //   // contains checks if an item is present inside of the given array/list.
