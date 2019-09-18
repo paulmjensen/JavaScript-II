@@ -78,16 +78,20 @@ multiplyNums(9, 10, (Multiply) =>{
   console.log(Multiply);
 })
 //---------------------------------------------------------------------------------------------------------------------//
-// function contains(item, list, cb) {
-//   cb(list.ForEach(function(item, list{
-//     alert(item, list);
-//   }))
-//   // contains checks if an item is present inside of the given array/list.
-//   // Pass true to the callback if it is, otherwise pass false.
-// }
-// contains(anything, items, (UMMMM) => {
-//   console.log(UMMMM);
-// }
+function contains(item, list, cb){
+  if (list.includes(item)){
+    return cb(true);
+  } else{
+    return cb(false);
+  }
+}
+
+contains("Pencil", items, function(contain){
+  console.log(contain);
+})
+  // contains checks if an item is present inside of the given array/list.
+  // Pass true to the callback if it is, otherwise pass false.
+
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
