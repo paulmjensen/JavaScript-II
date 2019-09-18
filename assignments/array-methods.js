@@ -95,8 +95,27 @@ console.log(ticketPriceTotal);
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// Problem 1
+// Problem 1 --Need all last names in lower case
 
-// Problem 2
+let lastnamealllowercase = runners.map(function(element){
+  return element.last_name.toLowerCase();
+  })
+  
+  console.log(lastnamealllowercase);
 
-// Problem 3
+
+// Problem 2 --Need all emails for a mass email message
+
+let AllEmail = [];
+runners.forEach(function (element) {
+    AllEmail.push(`${element.email}`)
+});
+console.log(AllEmail);
+
+// Problem 3 --Need all companies for advertising purposes
+
+let Companies = [];
+runners.forEach(function (element) {
+    Companies.push(`${element.company_name}`)
+});
+console.log(Companies);

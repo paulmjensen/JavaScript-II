@@ -78,6 +78,8 @@ multiplyNums(9, 10, (Multiply) =>{
   console.log(Multiply);
 })
 //---------------------------------------------------------------------------------------------------------------------//
+// contains checks if an item is present inside of the given array/list.
+  // Pass true to the callback if it is, otherwise pass false.
 function contains(item, list, cb){
   if (list.includes(item)){
     return cb(true);
@@ -89,8 +91,7 @@ function contains(item, list, cb){
 contains("Pencil", items, function(contain){
   console.log(contain);
 })
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
+  
 
 /* STRETCH PROBLEM */
 
